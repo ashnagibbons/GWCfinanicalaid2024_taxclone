@@ -1,0 +1,176 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  height: 90px;
+  background-color: #197278;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 9999;
+}
+
+.inner-container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1300px;
+  width: 100%;
+  margin: auto;
+}
+
+.inner-container h3 {
+  color: #2ec4b6;
+  font-family: "Glacial Indifference", sans-serif;
+  font-size: 23px;
+}
+
+.inner-container button {
+  font-family: "Glacial Indifference", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  background-color: #ffdf7f;
+  color: #2ec4b6;
+  padding: 15px;
+  border-radius: 50px;
+  border: none;
+}
+
+.auth-container {
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+  /* background-color: #dee2e6; */
+  /* background-color: black; */
+}
+
+.auth-container-box {
+  width: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.05) 0 6px 24px, rgba(0, 0, 0, 0.08) 0 0 0 1px;
+  background-color: #dee2e6;
+}
+
+.auth-container-box form {
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+  padding: 20px;
+}
+
+.auth-container-box form h2 {
+  font-family: "Glacial Indifference", sans-serif;
+}
+
+.auth-container-box form label {
+  font-family: "Canva Sans", sans-serif;
+  font-weight: bold;
+}
+
+.auth-container-box form input {
+  padding: 10px;
+  border-style: solid;
+}
+
+.auth-container-box button {
+  width: 25%;
+  text-align: center;
+  border: none;
+  border-radius: 50px;
+  padding: 10px;
+  background-color: #197278;
+  color: rgb(255, 255, 255);
+  font-family: "Glacial Indifference", sans-serif;
+  font-weight: bold;
+}
+
+.faq-container {
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: "Glacial Indifference", sans-serif;
+}
+
+.faq {
+  background-color: #197278;
+  font-family: "Glacial Indifference", sans-serif;
+}
+
+.faq-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 40px;
+  flex-wrap: wrap;
+}
+
+.faq-nav h3 {
+  color: #2ec4b6;;
+  margin: 0;
+}
+
+.faq-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.faq-nav ul li {
+  margin-left: 20px;
+  color: #fff;
+}
+
+.faq-nav ul li:first-child {
+  margin-left: 0;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+}
+
+.question {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.answer {
+  font-size: 16px;
+  color: #666;
+}
+
+.answer p {
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .faq-nav {
+    padding: 30px 40px; /* Adjust padding for larger screens */
+  }
+
+  .faq-nav h3 {
+    flex: initial; 
+  }
+
+  .faq-nav ul {
+    flex: initial; /* Revert to initial flex value for nav links */
+  }
+
+  .faq-nav ul li {
+    margin-left: 20px; /* Add margin back for list items */
+    margin-bottom: 0; /* Remove margin between list items */
+  }
+}
+
+@media screen and (max-width: 480px) and (min-width: 320px) {
+    .auth-container-box button {
+      width: auto;
+    }
+}
